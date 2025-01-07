@@ -1,0 +1,358 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="OpenObject-NAV: Open-Vocabulary Object-Oriented Navigation Based on Dynamic Carrier-Relationship Scene Graph.">
+  <meta name="keywords" content="OpenObject-NAV,  Open-Vocabulary, CRSG">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OpenObject-NAV</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+  <!-- <link rel="stylesheet" href="./static/css/foundation.css"/> -->
+  <link rel="stylesheet" href="./static/css/titleCenter.css"/>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+  <style>
+    .grid-container {
+      display: grid;
+      grid-template-columns: auto auto auto auto auto auto;
+      gap: 10px;
+      padding: 0;
+    }
+    
+    .grid-container > div {
+      text-align: center;
+      padding: 0;
+      font-size: 30px;
+    }
+    
+    .item1 {
+      grid-column: 1 / 4;
+    }
+    .item2 {
+      grid-column: 5 / 8;
+    }
+    .item3 {
+      grid-column: 1 / 4;
+    }
+    .item4 {
+      grid-column: 5 / 8;
+    }
+    
+    .content h4 {
+      font-size: 16px; !important;
+      padding: 0;
+      margin: 0; !important;
+    }
+    
+    hr {
+      background-color: lightgray;!important;
+    }
+    
+    </style>
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          More Research
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="https://OpenObj.github.io">
+            OpenObj
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</nav>
+  
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">OpenObject-NAV: Open-Vocabulary Object-Oriented Navigation Based on Dynamic Carrier-Relationship Scene Graph</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://github.com/BIT-TYJ">Yujie Tang</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href=" ">Meiling Wang</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="https://bit-dyn.github.io/">Yinan Deng</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href=" ">Zibo Zheng</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href=" ">Jiagui Zhong</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://yfyue-bit.github.io/">Yufeng Yue</a><sup>1</sup>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Beijing Institute of Technology, <sup>2</sup>University of Nottingham Ningbo China</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://openobject-nav.github.io"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code (Coming soon!)</span>
+                  </a>
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <style>
+        .title.is-3 {
+          text-align: center;
+        }
+        #teaser {
+          max-width: 100%;  
+          height: auto;     
+          display: block;   
+          margin-left: auto;
+          margin-right: auto;
+        }
+      </style>
+      <h2 class="title is-3">Poster</h2>
+      <img id="teaser1" src="./static/images/poster1.png" alt="teaser">
+      <h2 class="subtitle has-text-centered">
+        <span class="dnerf"> "Point to Point" represents the shortest path navigation. </span>
+      </h2>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p style="text-indent: 2em;">
+            In everyday life, frequently used objects like cups often have unfixed positions and multiple 
+            instances within the same category, and their carriers frequently change as well. As a result, 
+            it becomes challenging for a robot to efficiently navigate to a specific instance. To tackle this 
+            challenge, the robot must capture and update scene changes and plans continuously. However, 
+            current object navigation approaches primarily focus on semantic-level and lack the ability to 
+            dynamically update scene representation.  This paper captures the relationships between frequently 
+            used objects and their static carriers. It constructs an open-vocabulary Carrier-Relationship Scene 
+            Graph (CRSG) and updates the carrying status during robot navigation to reflect the dynamic changes 
+            of the scene. Based on the CRSG, we further propose an instance navigation strategy that models the 
+            navigation process as a Markov Decision Process. At each step, decisions are informed by Large Language 
+            Model's commonsense knowledge and visual-language feature similarity. We designed a series of 
+            long-sequence navigation tasks for frequently used everyday items in the Habitat simulator. The results 
+            demonstrate that by updating the CRSG, the robot can efficiently navigate to moved targets. Additionally, 
+            we deployed our algorithm on a real robot and validated its practical effectiveness. 
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <style>
+        .title.is-3 {
+          text-align: center;
+        }
+      </style>
+      <h2 class="title is-3">Framework</h2>
+      <div class="content has-text-justified">
+        <p style="text-indent: 2em;">
+          The OpenObject-NAV system framework consists of two main modules. The Scene Graph 
+          Construction module focuses on constructing the carrier-relationship scene graph. 
+          The Graph Updating and Navigation Strategy module is responsible for executing cognitive 
+          navigation based on user instructions, following the proposed navigation strategy, 
+          while updating the scene graph in the process.
+        </p>
+      </div>
+      <img id="teaser2" src="./static/images/framework.png" alt="teaser">
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <!-- Animation. -->
+      <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Results</h2>
+
+        <!-- Interpolating. -->
+        <h3 class="title is-4">1. Object Query on the Outdated Offline Map</h3>
+          <img id="teaser3" src="./static/images/scene1.png" alt="teaser">
+          <h2 class="subtitle has-text-centered">
+            <span>Experiment 1-1</span>
+          </h2>
+          <img id="teaser4" src="./static/images/scene2.png" alt="teaser">
+          <h2 class="subtitle has-text-centered">
+            <span>Experiment 1-2</span>
+          </h2>
+          <img id="teaser5" src="./static/images/scene3.png" alt="teaser">
+          <h2 class="subtitle has-text-centered">
+            <span>Experiment 1-3</span>
+          </h2>
+        <br>
+        <!--/ Interpolating. -->
+
+        <!-- Re-rendering. -->
+        <h3 class="title is-4">2. Long-sequence Navigation Task for Frequently Used Everyday Items</h3>
+        <div class="video-container">
+          <div class="media-wrapper">
+            <!-- Image -->
+            <img src="./static/images/tasklist2.png" alt="image">
+            <div class="video-wrapper"> 
+              <video autoplay muted loop playsinline controls width="100%" height="auto">
+                <source src="./static/videos/Simulation1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <h3 class="subtitle is-6">Simulation 1</h3>
+            </div>
+          </div>
+          <div class="media-wrapper">
+            <img src="./static/images/tasklist1.png" alt="image">
+            <div class="video-wrapper">
+              <video autoplay muted loop playsinline controls width="100%" height="auto">
+                <source src="./static/videos/Simulation2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <h3 class="subtitle is-6">Simulation 2</h3>
+            </div>
+          </div>
+        </div>
+        
+        <!--/ Re-rendering. -->
+
+        <h3 class="title is-4">3. Real-World Validation</h3>
+        <div class="video-container">
+          <div class="media-wrapper">
+            <div class="video-wrapper"> 
+              <video autoplay muted loop playsinline controls width="100%" height="auto">
+                <source src="./static/videos/actual1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <h3 class="subtitle is-6">Real-World 1</h3>
+            </div>
+          </div>
+          <div class="media-wrapper">
+            <div class="video-wrapper">
+              <video autoplay muted loop playsinline controls width="100%" height="auto">
+                <source src="./static/videos/actual2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <h3 class="subtitle is-6">Real-World 2</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{deng2024openobj,
+      title={OpenObject-NAV: Open-Vocabulary Object-Oriented Navigation Based on Dynamic Carrier-Relationship Scene Graph}, 
+      author={Tang,Yujie and Wang,Meiling and Deng,Yinan and Zheng,Zibo and Zhong,Jiagui and Yue,Yufeng},
+      journal={arXiv preprint arXiv:2406.08009},
+      year={2024}
+    }</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+            This webpage template is from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>. 
+            We sincerely thank <a href="https://keunhong.com/">Keunhong Park</a> for developing and open-sourcing this template.
+          </p>
+        </div>
+      </div>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+-->
+
+</body>
+</html>
