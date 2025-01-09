@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="OpenIN: Open-Vocabulary Instance-Oriented Navigation in Dynamic Domestic Environments">
+        content="OpenObject-NAV: Open-Vocabulary Object-Oriented Navigation Based on Dynamic Carrier-Relationship Scene Graph.">
   <meta name="keywords" content="OpenObject-NAV,  Open-Vocabulary, CRSG">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>OpenObject-NAV</title>
@@ -93,7 +93,7 @@
       <span aria-hidden="true"></span>
     </a>
   </div>
-<!--   <div class="navbar-menu">
+  <div class="navbar-menu">
     <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
       <div class="navbar-item has-dropdown is-hoverable">
         <a class="navbar-link">
@@ -105,17 +105,17 @@
           </a>
         </div>
       </div>
-    </div> -->
+    </div>
 
-<!--   </div>
-</nav> -->
+  </div>
+</nav>
   
 <section class="hero">
   <div class="hero-body">
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">OpenIN: Open-Vocabulary Instance-Oriented Navigation in Dynamic Domestic Environments</h1>
+          <h1 class="title is-1 publication-title">OpenObject-NAV: Open-Vocabulary Object-Oriented Navigation Based on Dynamic Carrier-Relationship Scene Graph</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
               <a href="https://github.com/BIT-TYJ">Yujie Tang</a><sup>1</sup>,</span>
@@ -192,22 +192,20 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p style="text-indent: 2em;">
-           In daily domestic settings, frequently used objects like cups often have unfixed positions
-            and multiple instances within the same category, 
-            and their carriers frequently change as well.
-            As a result, it becomes challenging for a robot to efficiently navigate to a specific instance. 
-            To tackle this challenge, the robot must capture and update scene changes and plans continuously. 
-            However, current object navigation approaches primarily focus on the semantic level 
-            and lack the ability to dynamically update scene representation.  
-            In contrast, this paper captures the relationships between frequently used objects and their static carriers. 
-            It constructs an open-vocabulary Carrier-Relationship Scene Graph (CRSG) and updates the carrying status 
-            during robot navigation to reflect the dynamic changes of the scene. Based on the CRSG, 
-            we further propose an instance navigation strategy that models the navigation process as a Markov Decision Process.
-            At each step, decisions are informed by the Large Language Model's commonsense knowledge 
-            and visual-language feature similarity. We designed a series of long-sequence navigation tasks for frequently 
-            used everyday items in the Habitat simulator. The results demonstrate that by updating the CRSG, 
-            the robot can efficiently navigate to moved targets. 
-            Additionally, we deployed our algorithm on a real robot and validated its practical effectiveness.
+            In everyday life, frequently used objects like cups often have unfixed positions and multiple 
+            instances within the same category, and their carriers frequently change as well. As a result, 
+            it becomes challenging for a robot to efficiently navigate to a specific instance. To tackle this 
+            challenge, the robot must capture and update scene changes and plans continuously. However, 
+            current object navigation approaches primarily focus on semantic-level and lack the ability to 
+            dynamically update scene representation.  This paper captures the relationships between frequently 
+            used objects and their static carriers. It constructs an open-vocabulary Carrier-Relationship Scene 
+            Graph (CRSG) and updates the carrying status during robot navigation to reflect the dynamic changes 
+            of the scene. Based on the CRSG, we further propose an instance navigation strategy that models the 
+            navigation process as a Markov Decision Process. At each step, decisions are informed by Large Language 
+            Model's commonsense knowledge and visual-language feature similarity. We designed a series of 
+            long-sequence navigation tasks for frequently used everyday items in the Habitat simulator. The results 
+            demonstrate that by updating the CRSG, the robot can efficiently navigate to moved targets. Additionally, 
+            we deployed our algorithm on a real robot and validated its practical effectiveness. 
           </p>
         </div>
       </div>
@@ -227,10 +225,10 @@
       <h2 class="title is-3">Framework</h2>
       <div class="content has-text-justified">
         <p style="text-indent: 2em;">
-          The OpenIN framework consists of two main modules. 
-          The Scene Graph Construction module focuses on constructing the scene graph that describes 
-          the carrier-carried relationships. The Graph Updating and Navigation Strategy module is responsible 
-          for executing cognitive navigation based on user instructions, following the proposed navigation strategy,
+          The OpenObject-NAV system framework consists of two main modules. The Scene Graph 
+          Construction module focuses on constructing the carrier-relationship scene graph. 
+          The Graph Updating and Navigation Strategy module is responsible for executing cognitive 
+          navigation based on user instructions, following the proposed navigation strategy, 
           while updating the scene graph in the process.
         </p>
       </div>
