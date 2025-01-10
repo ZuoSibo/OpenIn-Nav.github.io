@@ -55,7 +55,22 @@
       padding: 0;
       font-size: 30px;
     }
-    
+    .grid-item {
+      background-color: #f0f0f0; /* 设置背景颜色 */
+      border: 1px solid #ccc; /* 可选：边框 */
+      border-radius: 5px; /* 可选：圆角 */
+      overflow: hidden; /* 确保内容不超出边界 */
+      display: flex; /* 使用 Flexbox 居中内容 */
+      justify-content: center; /* 水平居中 */
+      align-items: center; /* 垂直居中 */
+      height: 200px; /* 设置统一高度 */
+}
+
+  .grid-item img {
+        max-width: 100%; /* 确保图片不超出容器宽度 */
+        max-height: 100%; /* 确保图片不超出容器高度 */
+        object-fit: contain; /* 保持图片比例，填满容器 */
+  }
     .item1 {
       grid-column: 1 / 4;
     }
