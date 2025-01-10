@@ -45,16 +45,16 @@
   <style>
     .grid-container {
       display: grid;
-      grid-template-columns: auto auto auto auto auto auto;
-      gap: 10px;
-      padding: 0;
-    }
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* 自适应列数 */
+      gap: 20px; /* 图片之间的间距 */
+      padding: 20px;
+}
     
-    .grid-container > div {
+/*     .grid-container > div {
       text-align: center;
       padding: 0;
       font-size: 30px;
-    }
+    } */
     .grid-item {
       background-color: #f0f0f0; /* 设置背景颜色 */
       border: 1px solid #ccc; /* 可选：边框 */
