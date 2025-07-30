@@ -55,7 +55,7 @@
       padding: 0;
       font-size: 30px;
     } */
-    .grid-item {
+  .grid-item {
       background-color: #f0f0f0; /* 设置背景颜色 */
       border: 1px solid #ccc; /* 可选：边框 */
       border-radius: 5px; /* 可选：圆角 */
@@ -64,8 +64,24 @@
       justify-content: center; /* 水平居中 */
       align-items: center; /* 垂直居中 */
       height: 200px; /* 设置统一高度 */
-}
-
+  }
+ .authors-section {
+        text-align: center;
+        margin-bottom: 30px;
+  }
+  .author-name {
+        margin: 5px 0;
+        font-weight: 500;
+  }
+  .institution {
+        font-style: italic;
+        margin: 25px 0;
+        color: #555;
+  }
+  .super {
+            vertical-align: super;
+            font-size: smaller;
+  }
   .grid-item img {
         max-width: 100%; /* 确保图片不超出容器宽度 */
         max-height: 100%; /* 确保图片不超出容器高度 */
@@ -134,7 +150,18 @@
 <!--           <div class="is-size-5 publication-authors">
             <span class="author-block"><sup>1</sup>Beijing Institute of Technology, <sup>2</sup>University of Nottingham Ningbo China</span>
           </div> -->
-
+          <div class="authors-section">
+        <!-- 作者列表 -->
+            <div class="author-name">Yujie Tang<span class="super">1</span></div>
+            <div class="author-name">Meiling Wang<span class="super">1</span></div>
+            <div class="author-name">Yinan Deng<span class="super">1</span></div>
+            <div class="author-name">Zibo Zheng<span class="super">2</span></div>
+            <div class="author-name">Jingchuan Deng<span class="super">1</span></div>
+            <div class="author-name">Sibo Zuo<span class="super">1</span></div>
+            <div class="author-name">Yufeng Yue<span class="super">1</span></div>
+            <div class="institution"><span class="super">1</span> Beijing Institute of Technology</div>
+            <div class="institution"><span class="super">1</span> University of Nottingham Ningbo China</div>
+    </div>
           <div class="column has-text-centered">
             <div class="publication-links">
               <!-- Code Link. -->
